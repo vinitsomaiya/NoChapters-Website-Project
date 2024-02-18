@@ -1,0 +1,158 @@
+/* -------------Cart Page--------------- */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Remove all margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* Container */
+
+.cart_section {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    max-height: auto;
+    margin: 0 auto;
+
+}
+
+table {
+    /* color: rgb(197, 163, 27); */
+    color: #ffff;
+    border: 1px solid rgb(197, 163, 27);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    color: #ffff;
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    border: 1px solid rgb(197, 163, 27);
+    padding: .4em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* .main_section_fog_img {
+        position: fixed;
+        bottom: -30px;
+    } */
+
+    .cart_section {
+        height: 180vh;
+    }
+
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid rgb(197, 163, 27);
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid rgb(197, 163, 27);
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+
+        /* aria-label has no advantage, it won't be read inside a table
+    * content: attr(aria-label)*/
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.button_container_order_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+
+}
+
+.myBtn_order_page {
+    border: 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: rgb(197, 163, 27)
+}
+
+.myBtn_order_page:hover {
+    color: white;
+    border: 0px;
+
+    background-color: rgb(238, 195, 20);
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(238, 195, 20);
+    -moz-box-shadow: 10px 10px 99px 6px rgb(238, 195, 20);
+    box-shadow: 10px 10px 99px 6px rgb(238, 195, 20);
+
+}

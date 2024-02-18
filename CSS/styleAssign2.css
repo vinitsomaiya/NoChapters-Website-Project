@@ -1,0 +1,189 @@
+/* CST8285-313 
+project: Assignment2
+author: Web-Dev-#9 Kyoko Ikari
+student no: 041042759
+*/
+
+/* base margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* entire body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* header */
+.nav-bar {
+    overflow: hidden;
+    background-color: white;
+    padding: 0 15px 0 0;
+}
+
+.nav-bar a {
+    float: left;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 135%;
+    line-height: 75px;
+}
+
+.nav-links {
+    float: right;
+    /* vertical-align: middle;
+    line-height: 75px; */
+    margin-top: 20px;
+}
+
+.nav-logo {
+    max-width: 10%;
+    max-height: 10%;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* index.html */
+
+/* main section */
+#section-home {
+    height: 90vh;
+    text-align: center;
+    background-image: url('./../images/picOriginal.jpg');
+    background-size: cover;
+}
+
+#noChapters {
+    color: white;
+    font-weight: 900;
+    font-size: 300%;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#p-noChapters {
+    color: white;
+    font-weight: 900;
+    font-size: 150%;
+}
+
+#click-selection {
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    border: outset;
+    margin-right: 30px;
+}
+
+#click-selection:hover {
+    color: rgb(197, 163, 27);
+}
+
+#click-sign-up {
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    border: outset;
+    margin-left: 30px;
+}
+
+#click-sign-up:hover {
+    color: rgb(197, 163, 27);
+}
+
+/* footer */
+footer {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    text-align: center;
+    padding: 20px 10px 15px;
+    margin-top: 0px;
+}
+
+.footer-p {
+    padding-top: 3px;
+    font-size: 90%;
+}
+
+#footer-mail {
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.material-icons {
+    padding: 0 5px 0 0;
+}
+
+#copyright {
+    font-size: 70%;
+}
+
+a:hover {
+    color: rgb(197, 163, 27);
+}
+
+/*  responsive design */
+@media screen and (max-width: 650px) {
+
+    /* for all documents */
+    .nav-bar {
+        padding: 0
+    }
+
+    .nav-bar a {
+        line-height: 30px;
+        padding: 5px;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-logo>img {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .nav-links {
+        float: none;
+    }
+
+    /* 
+for index.html
+*/
+    #section-home {
+        height: 80vh;
+        text-align: center;
+        background-image: url('./../images/picOriginal.jpg');
+        background-size: cover;
+    }
+
+    #noChapters {
+        font-size: 200%;
+        padding-top: 70px;
+    }
+
+    #p-noChapters {
+        font-weight: 900;
+        font-size: 120%;
+    }
+
+}
